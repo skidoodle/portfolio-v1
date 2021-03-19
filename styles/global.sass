@@ -1,0 +1,40 @@
+@use 'variables.sass'
+
+html
+  user-select: none
+  
+body
+  padding: 0
+  margin: 0
+  font-family: variables.$font
+  background-color: #0E1117
+
+*
+  box-sizing: border-box
+
+button, input, textarea, select
+  font-family: variables.$font
+
+::selection
+  background: rgba(variables.$theme, .6)
+  color: #000
+
+.fade-transition-enter
+  opacity: 0 !important
+
+.fade-transition-enter-active
+  opacity: 1 !important
+  transition: opacity 200ms !important
+
+.fade-transition-exit
+  opacity: 1 !important
+
+.fade-transition-exit-active
+  opacity: 0 !important
+  transition: opacity 200ms !important
+
+.fade-transition-enter-done
+  opacity: 1 !important
+
+.fade-transition-exit-done
+  opacity: 0 !important
