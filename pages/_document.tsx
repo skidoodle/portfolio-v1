@@ -10,6 +10,7 @@ class Doc extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta name="theme-color" content="#0E1117" />
         </Head>
         <body>
           <Main />
