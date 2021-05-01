@@ -1,18 +1,19 @@
-import { Github, Instagram } from '@geist-ui/react-icons'
-import Discord from '../components/Discord'
-import copy from 'copy-to-clipboard'
-import { useState } from 'react'
-import { CSSTransition } from 'react-transition-group'
-import styles from '../styles/home.module.sass'
-import Head from 'next/head'
+import { Github, Instagram } from "@geist-ui/react-icons";
+import Discord from "../components/Discord";
+import Steam from "../components/Steam";
+import copy from "copy-to-clipboard";
+import { useState } from "react";
+import { CSSTransition } from "react-transition-group";
+import styles from "../styles/home.module.sass";
+import Head from "next/head";
 
 export default function Home() {
-  const [visibleNot, setVisibleNot] = useState(false)
+  const [visibleNot, setVisibleNot] = useState(false);
 
   function copyDiscord() {
-    copy('albert#8838')
-    setVisibleNot(true)
-    setTimeout(() => setVisibleNot(false), 5000)
+    copy("albert#8838");
+    setVisibleNot(true);
+    setTimeout(() => setVisibleNot(false), 5000);
   }
 
   return (
@@ -40,6 +41,16 @@ export default function Home() {
             >
               <Instagram />
             </a>
+
+            <a
+              href="https://steamcommunity.com/id/_albert"
+              className={styles.social}
+              target="_blank"
+              rel="noopener noreferer"
+            >
+              <Steam />
+            </a>
+
             <a className={styles.social} onClick={copyDiscord}>
               <Discord />
             </a>
@@ -47,10 +58,13 @@ export default function Home() {
         </div>
       </div>
       <CSSTransition in={visibleNot} timeout={230} classNames="fade-transition">
-        <div className={styles.Notification} onClick={() => setVisibleNot(false)}>
+        <div
+          className={styles.Notification}
+          onClick={() => setVisibleNot(false)}
+        >
           Copied discord tag!
         </div>
       </CSSTransition>
     </>
-  )
+  );
 }
