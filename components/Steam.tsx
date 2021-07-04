@@ -3,13 +3,9 @@ export default function Steam() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
-      shapeRendering="geometricPrecision"
-      strokeLinecap="round"
       viewBox="0 0 1024 928"
       width="1024"
       height="928"
-      stroke="currentColor"
-      strokeWidth=".1"
       style={{ color: "currentColor" }}
     >
       <path
