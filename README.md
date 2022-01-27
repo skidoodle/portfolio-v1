@@ -1,4 +1,4 @@
-## Made by skidoodle (albert) [aalbert.tech](https://aalbert.tech)
+## Made by skidoodle (albert) [albrt.hu](https://albrt.hu)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
