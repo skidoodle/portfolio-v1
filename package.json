@@ -13,6 +13,7 @@
     "pre-commit": "prettier --write . && git add -A"
   },
   "dependencies": {
+    "@geist-ui/react": "^2.2.5",
     "@geist-ui/react-icons": "^1.0.1",
     "axios": "^0.21.3",
     "copy-to-clipboard": "^3.3.1",
