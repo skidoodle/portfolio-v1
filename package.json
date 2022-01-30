@@ -17,14 +17,17 @@
     "@geist-ui/react-icons": "^1.0.1",
     "axios": "^0.21.3",
     "copy-to-clipboard": "^3.3.1",
-    "next": "^12.0.2",
+    "file-loader": "^6.2.0",
+    "next": "12",
     "next-compose-plugins": "^2.2.1",
-    "next-images": "^1.6.2",
+    "next-images": "^1.8.4",
     "nextjs": "^0.0.3",
     "react": "^17.0.2",
-    "react-dom": "16.13.1",
+    "react-dom": "^17.0.2",
     "react-transition-group": "^4.4.1",
-    "sass": "^1.28.0"
+    "sass": "^1.28.0",
+    "url-loader": "^4.1.1",
+    "webpack": "4.0.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.6",
